@@ -1,0 +1,91 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@layer components{
+    
+    .card{
+        @apply bg-blue-400 rounded-lg overflow-hidden shadow-sm relative w-96 h-full;
+    }
+    .card1{
+        @apply text-gray-900 w-80 bg-gray-600 rounded-lg overflow-hidden shadow-sm relative h-full ;
+    }
+    .card-header{
+        @apply uppercase font-bold align-middle ml-24 text-lg;
+    }
+    .card-link{
+        @apply my-8;
+    }
+    
+    .card-img{
+        @apply object-cover w-full h-60;
+    }
+    .img-card{
+        @apply object-cover w-full h-full;
+    }
+    .badge{
+        @apply bg-red-400 text-white text-xs rounded-full p-2 absolute top-8  uppercase ;
+    }
+    .badge1{
+        @apply bg-red-400 text-white text-xs rounded-full p-2 absolute top-0 uppercase ml-2;
+    }
+    
+    .btn-sm{
+        @apply  text-xs rounded-full uppercase py-2 px-3 font-bold cursor-pointer tracking-wide ;
+    }
+    .btn-sm1{
+        @apply  text-xs rounded-full uppercase py-2 px-3 font-bold cursor-pointer tracking-wide hover:opacity-50 ;
+    }
+    .btn-lg{
+        @apply  w-full text-xs rounded-full uppercase py-2 px-3 font-bold cursor-pointer tracking-wide ;
+    }
+    .btn-back{
+        @apply  bg-red-500 rounded border-2 border-gray-700 mt-4 ;
+    }
+    .backBtn-Container{
+        @apply  p-2 ;
+    }
+    .nav-link{
+        @apply lg:p-4 py-3 px-0 border-b-2 border-transparent block hover:border-black capitalize hover:text-red-400;
+    }
+
+    .section-title{
+        @apply flex flex-wrap justify-center;
+    }
+    
+    .form-group{
+        @apply bg-white rounded-lg p-6;
+    }
+    .form-control{
+        @apply block capitalize rounded-md px-3 w-full border-4 border-blue-200 focus:border-blue-400 h-8 focus:outline-none focus:bg-gray-100 ;
+    }
+    .form-textarea{
+        @apply block h-auto border-4 rounded-md focus:bg-gray-100 border-blue-200 focus:outline-none focus:border-blue-400;
+    }
+    
+    .alert{
+        @apply relative mb-4 border-transparent border-2 px-3 rounded-md bg-red-600;
+    }
+    .readmore{
+        @apply bg-red-500 hover:bg-gray-700 hover:text-white font-mono border-2 border-gray-500 px-2 rounded-md capitalize;
+    }
+
+    .skill-span{
+        @apply text-white text-4xl font-serif;
+    }
+    .skill-h1{
+        @apply capitalize text-2xl font-bold font-mono;
+    }
+    
+    .btn-log{
+        @apply bg-blue-700 rounded px-8 py-2 text-gray-900 text-lg font-bold cursor-pointer hover:text-gray-200 hover:bg-gray-800 transition transform duration-500 ease-in-out hover:-translate-y-1 hover:scale-110;
+    }
+    .img-fluid{
+        @apply h-40 w-full;
+    }
+    .span-text{
+        @apply font-semibold text-gray-200;
+    }
+}
